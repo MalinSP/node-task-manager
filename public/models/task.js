@@ -5,7 +5,7 @@ const TaskSchema = new mongoose.Schema({
     type: String,
     required: [true, "must provide name"],
     trim: true,
-    maxlength: [20, "name can't be more than 20 characters"],
+    maxlength: [20, "name can not be more than 20 characters"],
   },
   completed: {
     type: Boolean,
@@ -13,4 +13,4 @@ const TaskSchema = new mongoose.Schema({
   },
 });
 
-module.exports = mongoose.model("Task", TaskSchema);
+module.exports = mongoose.model("task", TaskSchema);
